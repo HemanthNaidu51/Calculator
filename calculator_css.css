@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.calculator {
+    background: #2c3e50;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    border: 2px solid #34495e;
+    max-width: 400px;
+    width: 100%;
+}
+
+.brand {
+    text-align: center;
+    color: #ecf0f1;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.display {
+    background: #1a252f;
+    border: 3px inset #34495e;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.display-main {
+    color: #00ff00;
+    font-size: 32px;
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0,255,0,0.5);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.display-secondary {
+    color: #7f8c8d;
+    font-size: 16px;
+    text-align: right;
+    margin-bottom: 10px;
+    min-height: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+
+button {
+    padding: 15px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    font-family: 'Courier New', monospace;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.btn-number {
+    background: #34495e;
+    color: #ecf0f1;
+    border: 2px solid #4a5f7a;
+}
+
+.btn-number:hover {
+    background: #4a5f7a;
+}
+
+.btn-operator {
+    background: #e74c3c;
+    color: white;
+    border: 2px solid #c0392b;
+}
+
+.btn-operator:hover {
+    background: #c0392b;
+}
+
+.btn-function {
+    background: #f39c12;
+    color: white;
+    border: 2px solid #d68910;
+    font-size: 12px;
+}
+
+.btn-function:hover {
+    background: #d68910;
+}
+
+.btn-equals {
+    background: #27ae60;
+    color: white;
+    border: 2px solid #229954;
+}
+
+.btn-equals:hover {
+    background: #229954;
+}
+
+.btn-clear {
+    background: #8e44ad;
+    color: white;
+    border: 2px solid #7d3c98;
+}
+
+.btn-clear:hover {
+    background: #7d3c98;
+}
+
+.btn-wide {
+    grid-column: span 2;
+}
+
+.mode-display {
+    color: #3498db;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+}

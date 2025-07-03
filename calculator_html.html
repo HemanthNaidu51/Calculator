@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casio Calculator</title>
+    <link rel="stylesheet" href="calculator_css.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="brand">CASIO fx-991ES</div>
+        <div class="display">
+            <div class="display-secondary" id="secondary-display"></div>
+            <div class="mode-display" id="mode-display">DEG</div>
+            <div class="display-main" id="main-display">0</div>
+        </div>
+        <div class="buttons">
+            <!-- Row 1 -->
+            <button class="btn-function" onclick="toggleMode()">MODE</button>
+            <button class="btn-function" onclick="clearAll()">AC</button>
+            <button class="btn-function" onclick="deleteLast()">DEL</button>
+            <button class="btn-function" onclick="inputFunction('(')">(</button>
+            <button class="btn-function" onclick="inputFunction(')')">)</button>
+            
+            <!-- Row 2 -->
+            <button class="btn-function" onclick="inputFunction('sin(')">sin</button>
+            <button class="btn-function" onclick="inputFunction('cos(')">cos</button>
+            <button class="btn-function" onclick="inputFunction('tan(')">tan</button>
+            <button class="btn-function" onclick="inputFunction('log(')">log</button>
+            <button class="btn-function" onclick="inputFunction('ln(')">ln</button>
+            
+            <!-- Row 3 -->
+            <button class="btn-function" onclick="inputFunction('sqrt(')">√</button>
+            <button class="btn-function" onclick="inputFunction('^')">x^y</button>
+            <button class="btn-function" onclick="inputFunction('!')" title="factorial">x!</button>
+            <button class="btn-operator" onclick="inputOperator('/')">/</button>
+            <button class="btn-operator" onclick="inputOperator('*')">×</button>
+            
+            <!-- Row 4 -->
+            <button class="btn-number" onclick="inputNumber('7')">7</button>
+            <button class="btn-number" onclick="inputNumber('8')">8</button>
+            <button class="btn-number" onclick="inputNumber('9')">9</button>
+            <button class="btn-operator" onclick="inputOperator('-')">-</button>
+            <button class="btn-function" onclick="inputConstant('π')">π</button>
+            
+            <!-- Row 5 -->
+            <button class="btn-number" onclick="inputNumber('4')">4</button>
+            <button class="btn-number" onclick="inputNumber('5')">5</button>
+            <button class="btn-number" onclick="inputNumber('6')">6</button>
+            <button class="btn-operator" onclick="inputOperator('+')">+</button>
+            <button class="btn-function" onclick="inputConstant('e')">e</button>
+            
+            <!-- Row 6 -->
+            <button class="btn-number" onclick="inputNumber('1')">1</button>
+            <button class="btn-number" onclick="inputNumber('2')">2</button>
+            <button class="btn-number" onclick="inputNumber('3')">3</button>
+            <button class="btn-equals" onclick="calculate()">=</button>
+            <button class="btn-function" onclick="inputFunction('abs(')">|x|</button>
+            
+            <!-- Row 7 -->
+            <button class="btn-number btn-wide" onclick="inputNumber('0')">0</button>
+            <button class="btn-number" onclick="inputNumber('.')">.</button>
+            <button class="btn-function" onclick="inputOperator('**')">x²</button>
+        </div>
+    </div>
+    
+    <script src="calculator_js.js"></script>
+</body>
+</html>
